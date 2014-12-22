@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>data-model</title>
+</head>
+
+<body ng-app="scopeExample" class="ng-scope">
+    <div ng-controller="MyController">
+        Your name:
+        <input type="text" ng-model="username">
+        <button ng-click='sayHello()'>greet</button>
+        <hr> {{greeting}}
+    </div>
+    <script type="text/javascript" src="js/lib/angular.min.js"></script>
+    <script type="text/javascript" src="js/data-model.js"></script>
+</body>
+
+</html>
