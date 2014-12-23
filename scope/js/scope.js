@@ -1,8 +1,8 @@
 angular.module('scopeExample', [])
-    .controller('MyController', ['$scope', function($scope) {
+    .controller('MyController', ['$scope', function ($scope) {
         $scope.username = 'World';
 
-        $scope.sayHello = function() {
+        $scope.sayHello = function () {
             $scope.greeting = 'Hello ' + $scope.username + '!';
         };
     }]);
