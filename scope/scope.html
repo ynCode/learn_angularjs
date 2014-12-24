@@ -1,12 +1,67 @@
-<div ng-app="dateModel">
-    <div ng-controller="MyController">
-        <p>Your name:</p>
-        <input type="text" ng-model="username">
-        <button ng-click='sayHello()'>greet</button>
-        <hr>
-        {{greeting}}
-    </div>
-</div>
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Learn angularjs by ynCode</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/pygment_trac.css">
+    <script src="http://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>]
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="../stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+</head>
+<body>
+<div id="header">
+    <nav>
+        <li class="fork"><a href="https://github.com/ynCode/learn_angularjs">View On GitHub</a></li>
+        <li class="downloads"><a href="https://github.com/ynCode/learn_angularjs/zipball/master">ZIP</a></li>
+        <li class="downloads"><a href="https://github.com/ynCode/learn_angularjs/tarball/master">TAR</a></li>
+        <li class="title">DOWNLOADS</li>
+    </nav>
+</div>
+<!-- end header -->
+
+<div class="wrapper">
+
+    <section>
+        <div id="title">
+            <h1><a href="http://yncode.github.io/learn_angularjs/">Learn angularjs</a></h1>
+
+            <p>younixiao's code way</p>
+            <hr>
+            <span class="credits left">Project maintained by <a href="https://github.com/ynCode">ynCode</a></span>
+            <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a
+                    href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+            <a id="learn-angular" class="anchor" href="#learn-angular" aria-hidden="true"><span
+                    class="octicon octicon-link"></span></a>SCOPE</h1>
+
+        <h3>Date-Model</h3>
+
+        <div ng-app="dateModel" class="code-box">
+            <div ng-controller="MyController">
+                <p>Your name:</p>
+                <input type="text" ng-model="username">
+                <button ng-click='sayHello()'>greet</button>
+                <hr>
+                {{greeting}}
+            </div>
+        </div>
+    </section>
+
+</div>
+<!--[if !IE]>
+<script>fixScale(document);</script><![endif]-->
 <script type="text/javascript" src="../js/lib/angular.min.js"></script>
 <script type="text/javascript" src="js/scope.js"></script>
+</body>
+</html>
