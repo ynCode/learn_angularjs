@@ -6,3 +6,10 @@ angular.module('dateModel', [])
             $scope.greeting = 'Hello ' + $scope.username + '!';
         };
     }]);
+
+angular.module('scopeHierarchies', [])
+    .controller('GreetingController', ['$scope', '$rootScope', function ($scope, $rootScope) {
+        $scope.name = 'world';
+        $rootScope.department = 'angular';
+    }])
+    .controller
