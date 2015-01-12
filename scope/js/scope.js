@@ -12,4 +12,3 @@ angular.module('scopeHierarchies', [])
         $scope.name = 'world';
         $rootScope.department = 'angular';
     }])
-    .controller
